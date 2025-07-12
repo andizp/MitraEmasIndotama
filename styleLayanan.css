@@ -1,0 +1,310 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f0fdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #10A3A2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
+.logo h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.logo p {
+  font-size: 12px;
+  margin-top: -8px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  background: linear-gradient(135deg, #063D3D , #10A3A2 );
+  height: 674px; /* sama seperti tinggi gambar */
+  overflow: hidden;
+  padding: 0;
+  margin-top: 80px;
+}
+
+/* Gambar ditempelkan di kiri bawah */
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero-image img {
+  height: 674px;         /* tinggi fix */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Teks di sebelah kanan */
+.hero-content {
+  z-index: 1;
+  margin-left: auto;
+  padding: 80px 100px;
+  color: #fff;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content h2 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.hero-content h2 span {
+  font-size: 36px;
+  display: block;
+}
+
+.hero-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+
+/* Layanan Kami */
+/* ===== SECTION STYLE ===== */
+.services {
+  background-color: #d4fef7;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.services h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1b1b1b;
+}
+
+/* ===== FLEX GRID ===== */
+.service-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ===== KARTU LAYANAN ===== */
+.service-box {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #333;
+}
+
+/* HOVER: Gradasi & teks putih */
+.service-box:hover {
+  background: linear-gradient(135deg, #005c60, #00888a);
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* ===== ICON CIRCLE ===== */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background: #00b4b4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  transition: background 0.3s ease;
+}
+
+/* ICON TIDAK BERUBAH WARNA */
+.icon-circle img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Boleh ditambahkan animasi jika mau */
+}
+
+/* ===== TEKS ===== */
+.service-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.service-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+/* HOVER: Lingkaran putih, ikon tetap, teks putih */
+.service-box:hover .icon-circle {
+  background: #ffffff;
+}
+
+.service-box:hover h3,
+.service-box:hover p {
+  color: #ffffff;
+}
+
+
+/* ========= FOOTER STYLES ========= */
+.custom-footer {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* LOGO */
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+/* Brand Text */
+.brand {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 1 350px;
+}
+
+.brand-text .company-name {
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.brand-text .slogan {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.brand-text .desc {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 4px 0;
+}
+
+/* Navigasi & Kontak */
+.footer-section.nav,
+.footer-section.contact {
+  flex: 1 1 250px;
+  
+}
+
+.section-title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.footer-section a:hover {
+  color: #ffcd52;
+}
+
+.footer-section p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+/* Copyright */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+}
