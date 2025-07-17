@@ -316,7 +316,7 @@ body {
 }
 
 /* === RESPONSIVE UNTUK HP (≤768px) === */
-@media (max-width: 1080px) {
+@media (max-width: 414px) {
   /* Header */
   
   .menu-toggle {
