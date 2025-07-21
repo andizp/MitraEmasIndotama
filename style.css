@@ -1,12 +1,11 @@
-/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.hero-content h2 { font-size: 2.375rem; }   /* 38px */
-.hero-content h3 { font-size: 1.25rem; }    /* 20px */
+.hero-content h2 { font-size: 2.375rem; }
+.hero-content h3 { font-size: 1.25rem; }
 .hero-content p  { font-size: 1rem;
                   
 html {
@@ -23,7 +22,7 @@ body {
   font-size: 1rem;
 }
 
-/* ===== style dasar header/nav ===== */
+/* ===== header/nav ===== */
 .header {
   background-color: #10A3A2;
   color: white;
@@ -37,7 +36,6 @@ body {
   box-shadow: 0 10px 8px rgba(0,0,0,0.08);
 }
 
-/* navbar desktop: tampil inline */
 .navbar {
   display: flex;
 }
@@ -47,8 +45,8 @@ body {
   margin-left: 20px;
   font-weight: bold;
   position: relative;
-  padding: 8px 12px;           /* ruang untuk border */
-  border-radius: 6px;          /* sudut melengkung */
+  padding: 8px 12px;         
+  border-radius: 6px;     
   transition: background 0.3s, color 0.3s, border 0.3s;
 }
 .navbar a:hover {
@@ -65,8 +63,8 @@ body {
 /* ============== HERO ============== */
 .hero {
   display: flex;
-  justify-content: center; /* Tengah horizontal */
-  align-items: center;     /* Tengah vertikal untuk teks */
+  justify-content: center;
+  align-items: center;
   position: relative;
   background: linear-gradient(135deg, #063D3D, #10A3A2);
   height: 674px;
@@ -79,7 +77,7 @@ body {
 .hero-image {
   position: relative;
   flex-shrink: 0;
-  align-self: flex-end;    /* Hanya gambar yang turun ke bawah */
+  align-self: flex-end;
   margin-right: 40px;
   z-index: 0;
 }
@@ -99,7 +97,7 @@ body {
   max-width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Teks tetap di tengah vertikal */
+  justify-content: center;
   text-align: left;
 }
 
@@ -148,15 +146,13 @@ body {
   color: #333;
 }
 
-/* ===== FLEX GRID ===== */
 .service-boxes {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
-
-/* ===== KARTU LAYANAN ===== */
+                  
 .service-box {
   background: #fff;
   padding: 25px 20px;
@@ -168,14 +164,12 @@ body {
   color: #333;
 }
 
-/* HOVER: Gradasi & teks putih */
 .service-box:hover {
   background: linear-gradient(135deg, #005c60, #00888a);
   color: white;
   transform: translateY(-5px);
 }
 
-/* ===== ICON CIRCLE ===== */
 .icon-circle {
   width: 80px;
   height: 80px;
@@ -188,15 +182,15 @@ body {
   transition: background 0.3s ease;
 }
 
-/* ICON TIDAK BERUBAH WARNA */
+
 .icon-circle img {
   width: 80px;
   height: 80px;
   object-fit: contain;
-  transition: transform 0.3s ease; /* Boleh ditambahkan animasi jika mau */
+  transition: transform 0.3s ease; 
 }
 
-/* ===== TEKS ===== */
+
 .service-box h3 {
   font-size: 16px;
   font-weight: 700;
@@ -210,7 +204,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* HOVER: Lingkaran putih, ikon tetap, teks putih */
 .service-box:hover .icon-circle {
   background: #ffffff;
 }
@@ -221,7 +214,7 @@ body {
 }
 
 
-/* ========= FOOTER STYLES ========= */
+/* ========= FOOTER ========= */
 .custom-footer {
   background-color: #111;
   color: #fff;
@@ -239,15 +232,6 @@ body {
   gap: 30px;
 }
 
-/* LOGO */
-.brand-logo {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  margin-right: 15px;
-}
-
-/* Brand Text */
 .brand {
   display: flex;
   align-items: flex-start;
@@ -272,7 +256,6 @@ body {
   margin: 4px 0;
 }
 
-/* Navigasi & Kontak */
 .footer-section.nav,
 .footer-section.contact {
   flex: 1 1 250px;
@@ -311,7 +294,6 @@ body {
   margin: 6px 0;
 }
 
-/* Copyright */
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
@@ -324,10 +306,9 @@ body {
   margin-bottom: 10px;
 }
 
-/* === RESPONSIVE UNTUK HP (≤768px) === */
-@media (max-width: 1080px) {
+/* ===UNTUK HP=== */
+@media (max-width: 400px) {
   /* Header */
-  
   .menu-toggle {
     display: block;
     background: none;
@@ -335,7 +316,7 @@ body {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    margin-left: auto;  /* push ke kanan */
+    margin-left: auto; 
     z-index: 3000;
   }
 
@@ -343,16 +324,16 @@ body {
     display: none;
     position: fixed;
     top: 0; 
-    left: 0;        /* dari kanan → jadi kiri */
+    left: 0;    
     height: 100%;
-    width: 60%;     /* 80% → 60% agar nggak terlalu besar */
+    width: 60%; 
     background-color: #0e8f8a;
     flex-direction: column;
     padding: 80px 20px;
-    box-shadow: 4px 0 8px rgba(0,0,0,0.2); /* geser shadow ke kanan */
+    box-shadow: 4px 0 8px rgba(0,0,0,0.2);
     z-index: 2000;
     transition: transform 0.3s ease;
-    transform: translateX(-100%);  /* sembunyikan di luar layar */
+    transform: translateX(-100%);
   }
   .navbar.open {
     display: flex;
@@ -384,38 +365,39 @@ body {
     max-width: 120px;
     margin-bottom: 10px;
   }
-  /* Hero Section */
+  
+  /* Hero*/
   .hero {
     display: flex;
-    flex-direction: row;    /* tetap row */
-    flex-wrap: nowrap;      /* jangan wrap ke baris baru */
-    align-items: center;    /* teks & container di‑center vertikal */
-    justify-content: center;/* center horisontal */
-    height: 100%;          /* sesuaikan tinggi */
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-items: center;  
+    justify-content: center;
+    height: 100%;  
     padding: 0 20px;
     padding-top: 50px;
   }
 
   .hero-image {
-    flex: 0 0 auto;         /* tidak boleh menyusut di bawah ukuran alami */
-    width: 50%;             /* atau pakai nilai persen yang pas */
+    flex: 0 0 auto;    
+    width: 50%;      
     display: flex;
     flex-direction: column;
     height: 100%;
   }
   .hero-image img {
-    margin-top: auto;       /* dorong ke bawah */
+    margin-top: auto;  
     max-height: 100%;
     width: auto;
     object-fit: contain;
   }
 
   .hero-content {
-    flex: 1 1 auto;         /* isi sisa ruang */
+    flex: 1 1 auto; 
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;/* teks di tengah vertikal */
+    justify-content: center;
   }
 
   .hero-content h2 {
@@ -442,42 +424,7 @@ body {
     line-height: 1.7;
     max-width: 650px;
   }
-
-  /* Tentang Kami */
-  .row {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .image-box {
-    width: 100%;
-    max-width: 250px;
-    margin: auto;
-  }
-  .text-box {
-    padding: 15px;
-  }
-
-  /* Visi & Misi */
-  .visi-misi {
-    height: auto;
-    padding: 20px;
-  }
-  .vm-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    padding: 20px;
-  }
-  .vm-text {
-    padding-left: 0;
-  }
-  .image-box-visi {
-    position: static;
-    transform: none;
-    margin-bottom: 20px;
-  }
-
+  
   /* Footer */
   .footer-content {
     flex-direction: column;
