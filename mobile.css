@@ -1,0 +1,405 @@
+/* Mobile-only improvements. Desktop/laptop layout is left unchanged. */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 8px 16px;
+    min-height: 62px;
+  }
+
+  .logo {
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .logo-image {
+    width: 46px;
+    flex: 0 0 auto;
+  }
+
+  .logo-text {
+    min-width: 0;
+  }
+
+  .logo-text h1 {
+    font-size: 15px;
+    line-height: 1.15;
+    white-space: normal;
+  }
+
+  .logo-text p {
+    font-size: 11px;
+  }
+
+  .menu-toggle {
+    font-size: 28px;
+    padding: 4px 8px;
+  }
+
+  .navbar {
+    width: min(82%, 320px);
+    padding: 78px 22px 24px;
+    overflow-y: auto;
+  }
+
+  .navbar a {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .drawer-logo {
+    max-width: 96px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 92px 20px 42px;
+    gap: 18px;
+  }
+
+  .hero-image {
+    margin-top: 0;
+  }
+
+  .hero-image img {
+    max-width: 82%;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .hero-content h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .hero-content h3 {
+    font-size: 17px;
+    margin-top: 12px;
+  }
+
+  .page-hero {
+    min-height: auto;
+    padding: 94px 20px 42px;
+  }
+
+  .page-hero h2 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+
+  .page-hero p {
+    font-size: 14px;
+  }
+
+  .page-hero .hero-dot {
+    width: 84px;
+    opacity: 0.45;
+  }
+
+  .container,
+  .section-wrapper {
+    width: 92%;
+  }
+
+  .overview,
+  .services,
+  .company-value,
+  .field-training,
+  .section-wrapper {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .overview h2,
+  .company-value h2,
+  .services h2,
+  .field-training h2,
+  .section-title-main {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .company-value {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .company-value .overlay {
+    max-width: 100%;
+    padding: 22px 18px;
+  }
+
+  .company-value p,
+  .section-subtitle {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .services {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .swiper {
+    padding-bottom: 36px;
+  }
+
+  .swiper-slide {
+    min-height: auto;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .service-card h3 {
+    min-height: auto;
+    font-size: 17px;
+  }
+
+  .service-card img {
+    height: 220px;
+  }
+
+  .service-card ul {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .training-picture {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .onFieldPic {
+    width: min(100%, 280px);
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .about {
+    padding: 34px 18px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-image-frame {
+    width: min(100%, 320px);
+    margin: 0 auto;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .vision-mission,
+  .legalitas,
+  .section-wrapper .contact-layout,
+  .product-grid,
+  .project-gallery,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card,
+  .activity-card,
+  .contact-info,
+  .contact-form-box,
+  .experience-card {
+    border-radius: 16px;
+  }
+
+  .product-photo-empty,
+  .product-photo-detail {
+    height: 170px;
+  }
+
+  .project-header {
+    gap: 14px;
+  }
+
+  .activity-card img {
+    height: 210px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .experience-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .experience-table {
+    min-width: 650px;
+  }
+
+
+
+  /* Fix khusus halaman About Us - Visi & Misi di layar kecil */
+  .visi-misi-section {
+    padding: 42px 14px;
+  }
+
+  .visi-misi-container {
+    width: 100%;
+    max-width: 520px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 22px 18px;
+    border-radius: 18px;
+    overflow: visible;
+  }
+
+  .visi-misi-image {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    max-width: 340px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+
+  .visi-misi-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .visi-misi-text {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .visi-misi-text h2 {
+    font-size: 22px;
+    line-height: 1.25;
+    margin: 10px 0 10px;
+  }
+
+  .visi-misi-text p {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+
+  .visi-misi-text ul {
+    margin-left: 18px;
+  }
+
+  .visi-misi-text li {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+
+  .custom-footer {
+    padding: 34px 18px 18px;
+  }
+
+  .footer-content {
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .brand {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .brand-text .company-name {
+    font-size: 20px;
+  }
+
+  .brand-text .slogan,
+  .brand-text .desc {
+    font-size: 14px;
+  }
+
+  .footer-section.nav,
+  .footer-section.contact {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+  }
+
+  .footer-section a,
+  .footer-section p {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    padding: 7px 12px;
+  }
+
+  .logo-image {
+    width: 40px;
+  }
+
+  .logo-text h1 {
+    font-size: 13px;
+  }
+
+  .logo-text p {
+    font-size: 10px;
+  }
+
+  .hero-content h2,
+  .page-hero h2 {
+    font-size: 23px;
+  }
+
+  .hero-content h3 {
+    font-size: 15px;
+  }
+
+  .service-card img,
+  .activity-card img {
+    height: 190px;
+  }
+
+  .product-modal-box {
+    padding: 18px;
+  }
+}

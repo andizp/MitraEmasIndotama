@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product | PT. Mitra Emas Indotama</title>
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="site-header"></div>
+  <script src="header.js"></script>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div>
+      <h2>PRODUCT</h2>
+      <p>Produk pendukung sistem kelistrikan industri, proteksi daya, konversi frekuensi, sistem baterai, dan energy storage system.</p>
+    </div>
+    <img src="picture/whiteDot.png" alt="" class="hero-dot">
+  </section>
+
+  <!-- Product Section -->
+  <section class="section-wrapper">
+    <h2 class="section-title-main">OUR PRODUCT</h2>
+    <p class="section-subtitle">Daftar produk utama kami</p>
+
+    <div class="product-grid product-grid-detail">
+      <div class="product-card product-preview-card">
+        <div class="product-photo-empty product-photo-detail">FOTO PRODUK</div>
+        <div class="product-content">
+          <span class="product-category">Power Protection</span>
+          <h3>CHLORIDE - AC UPS & DC CHARGER</h3>
+          <p>Solusi UPS dan DC Charger industri dengan teknologi SCR, perawatan mudah, serta sistem paralel yang mendukung kebutuhan operasional kritikal.</p>
+          <button type="button" class="detail-button" data-product="ups-charger">Lihat Detail</button>
+        </div>
+      </div>
+
+      <div class="product-card product-preview-card">
+        <div class="product-photo-empty product-photo-detail">FOTO PRODUK</div>
+        <div class="product-content">
+          <span class="product-category">Battery System</span>
+          <h3>CHLORIDE - SODIUM METAL BATTERIES (SMC)</h3>
+          <p>Sistem baterai sodium metal dengan desain tahan lama, bebas emisi, dan mendukung optimasi ruang pada kebutuhan industri.</p>
+          <button type="button" class="detail-button" data-product="smc-batteries">Lihat Detail</button>
+        </div>
+      </div>
+
+      <div class="product-card product-preview-card">
+        <div class="product-photo-empty product-photo-detail">FOTO PRODUK</div>
+        <div class="product-content">
+          <span class="product-category">Lightning Protection</span>
+          <h3>ALPS DAS & SBI</h3>
+          <p>Advanced Lightning Protection System untuk membantu melindungi personel, aset, fasilitas, dan perangkat elektronik sensitif.</p>
+          <button type="button" class="detail-button" data-product="alps-das-sbi">Lihat Detail</button>
+        </div>
+      </div>
+
+      <div class="product-card product-preview-card">
+        <div class="product-photo-empty product-photo-detail">FOTO PRODUK</div>
+        <div class="product-content">
+          <span class="product-category">Frequency Converter</span>
+          <h3>FREQUENCY CONVERTER SHOREMASTER UP TO 8MW</h3>
+          <p>Solusi shore-to-ship power supply untuk membantu mengurangi emisi pelabuhan dan mendukung suplai daya kapal saat bertambat.</p>
+          <button type="button" class="detail-button" data-product="shoremaster">Lihat Detail</button>
+        </div>
+      </div>
+
+      <div class="product-card product-preview-card">
+        <div class="product-photo-empty product-photo-detail">FOTO PRODUK</div>
+        <div class="product-content">
+          <span class="product-category">Frequency Converter</span>
+          <h3>SMART FC 10 - 1000 KVA</h3>
+          <p>Frequency Converter 50Hz/60Hz dengan output stabil untuk kebutuhan portside, shore-to-ship, dan aplikasi marine.</p>
+          <button type="button" class="detail-button" data-product="smart-fc">Lihat Detail</button>
+        </div>
+      </div>
+
+      <div class="product-card product-preview-card">
+        <div class="product-photo-empty product-photo-detail">FOTO PRODUK</div>
+        <div class="product-content">
+          <span class="product-category">Energy Storage</span>
+          <h3>INDUSTRIAL ENERGY STORAGE SYSTEM</h3>
+          <p>SmartESS1000 1000kW/2000kWh sebagai sistem penyimpanan energi terintegrasi untuk kebutuhan C&I dan aplikasi grid.</p>
+          <button type="button" class="detail-button" data-product="smartess1000">Lihat Detail</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Detail Modal -->
+  <div class="product-modal-overlay" id="productModal" aria-hidden="true">
+    <div class="product-modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Tutup detail produk">×</button>
+      <div class="modal-photo-empty">FOTO PRODUK</div>
+      <div class="modal-detail-content">
+        <span class="modal-category" id="modalCategory"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <div id="modalDetails"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div id="site-footer"></div>
+  <script src="footer.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>
